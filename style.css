@@ -110,7 +110,7 @@ a{
 }
 
 .button{
-    background-color: transparent;
+    background-color: #f3f3f3;
     width: 224px;
     height: 57px;
     border-width: 1px;
@@ -130,6 +130,7 @@ a{
 }
 
 .product-container{
+    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -178,21 +179,19 @@ a{
 }
 
 .highlight-container{
-    padding-left: 20px;
-    padding-right: 20px;
-    display: grid;
-    grid-template-rows: 656px
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
 }
 
 .highlight-description {
+    padding-right: 300px;
+    padding-left: 200px;
     font-family: 'Poppins', sans-serif;
     display: flex;
-    align-items: self-start;
     justify-content: end;
     flex-direction: column;
-    grid-column: 1/1;
-    grid-row: 1/1;
 }
 
 .highlight-cover{
@@ -201,15 +200,125 @@ a{
 }
 
 .cover-footer{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
+    display: flex;
+    position: absolute;
 
-.cover-footer-img{
-    grid-area: 1/1;
+
 }
 
 .cover-footer-description{
-    grid-area: 1/1;
+    position: relative;
+    color: #f3f3f3;
+    top: 450px;
+    left: 1200px;
+
 }
+
+
+.cover-footer-img img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    width: 1000px;
+    
+}
+
+footer {
+    position: absolute;
+    background-color: #ffffff;
+    height: 321px;
+    font-family: 'Poppins', sans-serif;
+    bottom: ;
+  }
+  
+  .footer-section {
+    padding: 44px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin: 0 auto;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+  }
+  
+  .footer-section h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: start;
+  }
+  
+  .footer-company {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-company a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #000000;
+    margin: 6px 0;
+  }
+  
+  .footer-legal-terms {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-legal-terms a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #000000;
+    margin: 6px 0;
+  }
+  
+  .footer-socmed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-socmed h1 {
+    margin-left: -14px;
+  }
+  
+  .socmed-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 14px;
+    margin-top: 14px;
+  }
+  
+  .socmed-icons img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    align-content: center;
+  }
+  
+  .footer-location {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .footer-location img {
+    height: 15px;
+    width: 15px;
+  }
+  
+  .footer-location p {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #000000;
+    margin-left: 3px;
+  }
